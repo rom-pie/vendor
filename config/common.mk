@@ -26,6 +26,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
+# Init file
+PRODUCT_COPY_FILES += \
+    vendor/aosmp/prebuilt/common/etc/init.local.rc:root/init.aosmp.rc
+
 # Packages
 include vendor/aosmp/config/packages.mk
 
