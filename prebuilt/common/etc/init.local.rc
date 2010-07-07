@@ -1,5 +1,4 @@
-# Run scripts in /system/etc/init.d
-    exec /system/xbin/run-parts /system/etc/init.d
+# Extras
 
 # Compcache
 service compcache_on /system/bin/logwrapper /system/bin/sh /system/bin/compcache start
