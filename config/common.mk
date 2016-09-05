@@ -41,3 +41,6 @@ include vendor/aosmp/config/packages.mk
 
 # Props
 include vendor/aosmp/config/props.mk
+
+# Version
+include vendor/aosmp/config/version.mk
