@@ -31,10 +31,17 @@ PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/common/etc/init.local.rc:system/etc/init/init.aosmp.rc
 
 # Backup Tool
+ifeq ($(AB_OTA_UPDATER),true)
+PRODUCT_COPY_FILES += \
+    vendor/aosmp/build/tools/backuptool_ab.sh:system/bin/backuptool_ab.sh \
+    vendor/aosmp/build/tools/backuptool_ab.functions:system/bin/backuptool_ab.functions \
+    vendor/aosmp/build/tools/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+else
 PRODUCT_COPY_FILES += \
     vendor/aosmp/build/tools/backuptool.sh:install/bin/backuptool.sh \
     vendor/aosmp/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/aosmp/build/tools/50-aosmp.sh:system/addon.d/50-aosmp.sh
+endif
 
 # APN list
 PRODUCT_COPY_FILES += \
