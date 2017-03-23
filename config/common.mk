@@ -40,6 +40,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
+# Sensitive Phone Numbers list
+PRODUCT_COPY_FILES += \
+    vendor/aosmp/prebuilt/common/etc/sensitive_pn.xml:system/etc/sensitive_pn.xml
+
 # Packages
 include vendor/aosmp/config/packages.mk
 
