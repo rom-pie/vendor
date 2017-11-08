@@ -30,6 +30,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/common/etc/init.local.rc:root/init.aosmp.rc
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/aosmp/build/tools/backuptool.sh:install/bin/backuptool.sh \
+    vendor/aosmp/build/tools/backuptool.functions:install/bin/backuptool.functions \
+    vendor/aosmp/build/tools/50-aosmp.sh:system/addon.d/50-aosmp.sh
+
 # Packages
 include vendor/aosmp/config/packages.mk
 
