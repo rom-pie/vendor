@@ -42,3 +42,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=0 \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
+
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.recorder.show_manufacturer_and_model=true
