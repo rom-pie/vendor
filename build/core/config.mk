@@ -1,3 +1,5 @@
+BUILD_RRO_SYSTEM_PACKAGE := $(TOPDIR)vendor/aosmp/build/core/system_rro.mk
+
 # Rules for MTK targets
 include $(TOPDIR)vendor/aosmp/build/core/mtk_target.mk
 
