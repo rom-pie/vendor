@@ -21,6 +21,10 @@ PRODUCT_PACKAGES += \
     messaging \
     SubstratumSignature
 
+# Fonts
+PRODUCT_PACKAGES += \
+    CustomFonts
+
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
