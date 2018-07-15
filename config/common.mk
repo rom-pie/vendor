@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
 
 # Init file
 PRODUCT_COPY_FILES += \
-    vendor/aosmp/prebuilt/common/etc/init.local.rc:root/init.aosmp.rc
+    vendor/aosmp/prebuilt/common/etc/init.local.rc:system/etc/init/init.aosmp.rc
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
