@@ -65,6 +65,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aosmp/overlay/dictionaries
 PRODUCT_COPY_FILES += \
     vendor/aosmp/config/permissions/aosmp-power-whitelist.xml:system/etc/sysconfig/aosmp-power-whitelist.xml
 
+# Pixel sysconfig
+PRODUCT_COPY_FILES += \
+    vendor/aosmp/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
+
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/common/etc/sensitive_pn.xml:system/etc/sensitive_pn.xml
