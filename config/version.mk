@@ -20,5 +20,10 @@ endif
 
 AOSMP_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(AOSMP_BUILD_TYPE)
 
-RODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.aosmp.version=$(AOSMP_VERSION)
+TARGET_PRODUCT_SHORT := $(subst aoskjp_,,$(AOSMP_BUILD_TYPE))
+
+AOSMP_FINGERPRINT := AOSmP/$(AOSMP_VERSION)/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date -u +%Y%m%d)
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.aosmp.version=$(AOSMP_VERSION) \
+    ro.aosmp.fingerprint=$(AOSMP_FINGERPRINT)  
