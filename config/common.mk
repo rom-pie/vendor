@@ -67,3 +67,7 @@ include vendor/aosmp/config/props.mk
 
 # Version
 include vendor/aosmp/config/version.mk
+
+# Themes
+include vendor/aosmp/config/accents.mk
+include vendor/aosmp/config/themes.mk
