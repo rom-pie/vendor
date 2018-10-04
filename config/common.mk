@@ -61,6 +61,14 @@ endif
 # Include Lineage LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosmp/overlay/dictionaries
 
+# Google prebuilts
+PRODUCT_PACKAGES += \
+    Turbo
+
+# Google apps privapp permissions
+PRODUCT_COPY_FILES += \
+    vendor/aosmp/prebuilt/common/etc/privapp-permissions-turbo.xml:system/etc/permissions/privapp-permissions-turbo.xml    
+
 # Power whitelist
 PRODUCT_COPY_FILES += \
     vendor/aosmp/config/permissions/aosmp-power-whitelist.xml:system/etc/sysconfig/aosmp-power-whitelist.xml
