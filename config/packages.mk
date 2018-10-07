@@ -17,13 +17,17 @@
 PRODUCT_PACKAGES += \
     BluetoothExt \
     LatinIME \
-    Launcher3QuickStep \
     messaging \
     SubstratumSignature
 
 # Fonts
 PRODUCT_PACKAGES += \
     CustomFonts
+
+#Lawnchair
+PRODUCT_PACKAGES += \
+    Lawnchair \
+    LawnConf
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -93,3 +97,4 @@ endif
 # Charger images
 PRODUCT_PACKAGES += \
     charger_res_images
+
