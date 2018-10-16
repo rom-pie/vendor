@@ -52,6 +52,9 @@ PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so \
     vendor/aosmp/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 
+# Include Lineage LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosmp/overlay/dictionaries
+
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/common/etc/sensitive_pn.xml:system/etc/sensitive_pn.xml
