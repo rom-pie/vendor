@@ -109,5 +109,8 @@
     <!-- The duration in which a recent task is considered in session and should be visible. -->
     <integer name="config_activeTaskDurationHours">12</integer>
 
+    <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
+    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
+
 </resources>
 
