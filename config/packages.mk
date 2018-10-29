@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     LatinIME \
     messaging \
-    SubstratumSignature
+    SubstratumSignature \
+    WeatherClient
 
 # Fonts
 PRODUCT_PACKAGES += \

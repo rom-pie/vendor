@@ -75,6 +75,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aosmp/overlay/dictionaries
 PRODUCT_PACKAGES += \
     Turbo
 
+# Weather
+PRODUCT_COPY_FILES += \
+    vendor/aosmp/prebuilt/common/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml
+
 # Google apps privapp permissions
 PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/common/etc/privapp-permissions-turbo.xml:system/etc/permissions/privapp-permissions-turbo.xml    
