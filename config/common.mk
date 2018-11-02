@@ -24,6 +24,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
+# Priv-app permissions
+PRODUCT_COPY_FILES += \
+    vendor/aosmp/prebuilt/common/etc/permissions/privapp-permissions-aosmp.xml:system/etc/permissions/privapp-permissions-aosmp.xml
+
 # Cutout control overlay
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
