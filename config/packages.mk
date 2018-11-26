@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     LatinIME \
     Launcher3QuickStep \
-    messaging
+    messaging \
+    SubstratumSignature
 
 # Extra tools
 PRODUCT_PACKAGES += \
