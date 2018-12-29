@@ -25,7 +25,9 @@ PRODUCT_PACKAGES += \
     SystemUIBlack \
     WellbeingDark \
     WellbeingBlack
-    
-    
-    
-    
+
+# Switch styler
+PRODUCT_PACKAGES += \
+    MD2Switch \
+    OnePlusSwitch \
+    StockSwitch
