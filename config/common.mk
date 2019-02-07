@@ -48,9 +48,15 @@ PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Keyboard libs
+ifeq ($(TARGET_ARCH), $(filter $(TARGET_ARCH), arm64))
 PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so \
     vendor/aosmp/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+else
+PRODUCT_COPY_FILES += \
+    vendor/aosmp/prebuilt/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
+    vendor/aosmp/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+endif
 
 # Include Lineage LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosmp/overlay/dictionaries
