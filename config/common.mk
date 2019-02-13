@@ -47,6 +47,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
+# Keyboard libs
+PRODUCT_COPY_FILES += \
+    vendor/aosmp/prebuilt/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so \
+    vendor/aosmp/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/common/etc/sensitive_pn.xml:system/etc/sensitive_pn.xml
