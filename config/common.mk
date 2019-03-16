@@ -20,6 +20,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     vendor/aosmp/overlay/common \
     vendor/aosmp/overlay/themes
 
+# Cutout control overlay
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
