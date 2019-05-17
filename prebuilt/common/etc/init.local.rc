@@ -213,5 +213,4 @@ on property:sys.io.scheduler=bfq
     write /sys/block/dm-0/queue/iosched/slice_idle 0
 
 on post-fs-data
-    chown system system /sys/class/power_supply/battery/battery_charging_enabled
-    chown system system /sys/class/power_supply/battery/charging_enabled
+	chown system system /sys/class/power_supply/battery/input_suspend
