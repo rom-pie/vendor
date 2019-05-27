@@ -16,7 +16,9 @@ PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/aosmp/prebuilt/common/bin/sysinit:system/bin/sysinit  \
 
-DEVICE_PACKAGE_OVERLAYS += vendor/aosmp/overlay/common
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/aosmp/overlay/common \
+    vendor/aosmp/overlay/themes
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
