@@ -14,16 +14,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+AOSMP_MOD_VERSION = 1.0
+
 ifndef AOSMP_BUILD_TYPE
     AOSMP_BUILD_TYPE := ALPHA
 endif
 
-AOSMP_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(AOSMP_BUILD_TYPE)
+CURRENT_DEVICE=$(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
+DATE := $(shell date -u +%Y%m%d-%H%M)
+TARGET_PRODUCT_SHORT := $(subst aosmp_,,$(AOSMP_BUILD_TYPE))
 
-TARGET_PRODUCT_SHORT := $(subst aoskjp_,,$(AOSMP_BUILD_TYPE))
-
-AOSMP_FINGERPRINT := AOSmP/$(AOSMP_VERSION)/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date -u +%H%M)
+AOSMP_VERSION := AOSmP-$(AOSMP_MOD_VERSION)-$(AOSMP_BUILD_TYPE)-$(CURRENT_DEVICE)-$(DATE)
+AOSMP_FINGERPRINT := AOSmP/$(AOSMP_MOD_VERSION)/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(DATE)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.aosmp.version=$(AOSMP_VERSION) \
+ 	ro.aosmp.releasetype=$(AOSMP_BUILD_TYPE) \
+	ro.modversion=$(AOSMP_MOD_VERSION)
+	
+AOSMP_DISPLAY_VERSION := $(AOSMP_BUILD_TYPE)-$(AOSMP_MOD_VERSION)
+	
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+	ro.aosmp.display.version=$(AOSMP_DISPLAY_VERSION) \
     ro.aosmp.fingerprint=$(AOSMP_FINGERPRINT)  
