@@ -17,7 +17,7 @@
 AOSMP_MOD_VERSION = 1.0
 
 ifndef AOSMP_BUILD_TYPE
-    AOSMP_BUILD_TYPE := ALPHA
+    AOSMP_BUILD_TYPE := BETA
 endif
 
 DATE := $(shell date -u +%Y%m%d-%H%M)
