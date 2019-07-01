@@ -20,6 +20,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     vendor/aosmp/overlay/common \
     vendor/aosmp/overlay/themes
 
+# Bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/aosmp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+
 # Cutout control overlay
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
