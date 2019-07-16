@@ -31,12 +31,7 @@ PRODUCT_PACKAGES += \
     MD2Switch \
     OnePlusSwitch \
     StockSwitch \
-    SwitchOne \
-    SwitchTwo \
-    SwitchThree \
-    SwitchFour \
-    SwitchFive \
-    SwitchSix \
-    SwitchSeven \
-    SwitchEight \
-    SwitchNine
+    Contained \
+    Retro \
+    Stockish \
+    Narrow
