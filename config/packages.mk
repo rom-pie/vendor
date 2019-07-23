@@ -17,6 +17,7 @@
 PRODUCT_PACKAGES += \
     BluetoothExt \
     LatinIME \
+    Launcher3QuickStep \
     messaging \
     SubstratumSignature \
     WeatherClient
@@ -24,11 +25,6 @@ PRODUCT_PACKAGES += \
 # Fonts
 PRODUCT_PACKAGES += \
     CustomFonts
-
-#Lawnchair
-PRODUCT_PACKAGES += \
-    Lawnchair \
-    LawnConf
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -98,4 +94,3 @@ endif
 # Charger images
 PRODUCT_PACKAGES += \
     charger_res_images
-
