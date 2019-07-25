@@ -85,19 +85,15 @@ PRODUCT_COPY_FILES += \
 
 # Google apps privapp permissions
 PRODUCT_COPY_FILES += \
-    vendor/aosmp/prebuilt/common/etc/privapp-permissions-turbo.xml:system/etc/permissions/privapp-permissions-turbo.xml    
+    vendor/aosmp/prebuilt/common/etc/permissions/privapp-permissions-turbo.xml:system/etc/permissions/privapp-permissions-turbo.xml    
 
 # Power whitelist
 PRODUCT_COPY_FILES += \
-    vendor/aosmp/config/permissions/aosmp-power-whitelist.xml:system/etc/sysconfig/aosmp-power-whitelist.xml
+    vendor/aosmp/prebuilt/common/etc/sysconfig/aosmp-power-whitelist.xml:system/etc/sysconfig/aosmp-power-whitelist.xml
 
 # Pixel sysconfig
 PRODUCT_COPY_FILES += \
     vendor/aosmp/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
-
-# Power whitelist
-PRODUCT_COPY_FILES += \
-    vendor/aosmp/config/permissions/aosmp-power-whitelist.xml:system/etc/sysconfig/aosmp-power-whitelist.xml
 
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
