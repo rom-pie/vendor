@@ -4,6 +4,26 @@ PRODUCT_PACKAGES += \
     Black \
     Blue \
     BlueGrey \
+    brandOne \
+    brandTwo \
+    brandThree \
+    brandFour \
+    brandFive \
+    brandSix \
+    brandSeven \
+    brandEight \
+    brandNine \
+    brandTen \
+    brandEleven \
+    brandTwelve \
+    brandThirteen \
+    brandFourteen \
+    brandFifteen \
+    brandSixteen \
+    brandSeventeen \
+    brandEighteen \
+    brandNineteen \
+    brandTwenty \
     Brown \
     Cyan \
     DeepOrange \
