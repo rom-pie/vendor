@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
     Launcher3QuickStep \
     messaging \
     SubstratumSignature \
+    SimpleGallery \
     WeatherClient
 
 # Fonts
