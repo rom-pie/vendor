@@ -14,10 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-AOSMP_MOD_VERSION = 4.0
+AOSMP_MOD_VERSION = 1.0
 
 ifndef AOSMP_BUILD_TYPE
-    AOSMP_BUILD_TYPE := BETA
+    AOSMP_BUILD_TYPE := STABLE
 endif
 
 DATE := $(shell date -u +%Y%m%d-%H%M)
