@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CustomFonts
 
+# Long screenshot
+PRODUCT_PACKAGES += \
+    Longshot
+
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
