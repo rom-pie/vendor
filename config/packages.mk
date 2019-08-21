@@ -31,6 +31,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Longshot
 
+# Recorder app
+PRODUCT_PACKAGES += \
+    Recorder
+
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
