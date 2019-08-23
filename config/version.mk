@@ -17,7 +17,7 @@
 AOSMP_MOD_VERSION = 2.0
 
 ifndef AOSMP_BUILD_TYPE
-    AOSMP_BUILD_TYPE := STABLE
+    AOSMP_BUILD_TYPE := Stable
 endif
 
 DATE := $(shell date -u +%Y%m%d-%H%M)
